@@ -1,5 +1,6 @@
 <script>
-  import Test from "./Test.svelte";
+  import Test from "../Test/Test.svelte";
+
   let count = 0;
   let clicked = false;
 
@@ -14,14 +15,14 @@
   };
 </script>
 
-<style>
+<style lang="scss" type="text/scss">
   button {
     padding: 10px;
-  }
 
-  .clicked {
-    background-color: black;
-    color: white;
+    &.clicked {
+      background-color: black;
+      color: white;
+    }
   }
 
   .item {
